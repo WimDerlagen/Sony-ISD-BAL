@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <style>
+        
+        </style>
+    </head>
+    <body>
+        <p>Geachte heer/mevrouw ##LastName##</p>
+        ##If--IsMultiple##
+        <p>Er zijn ##Count## producten als Loan besteld welke geaccordeerd moeten worden.</p>
+        <p>De volgende producten zijn besteld
+        ##Else--IsMultiple##
+        <p>Er is een product als Loan besteld welke geaccordeerd moet worden.</p>
+        <p>Het volgende product is besteld
+        ##EndIf--IsMultiple##
+        
+        <ul>
+        ##Links##
+        ##BlockBegin--Link##
+            <li><a href="##Url##">##Title##</a></li>
+        ##BlockEnd--Link##
+        </ul>
+        
+        </p>
+        
+        
+        <p>U dient de aanvraag de accorderen of af te wijzen</p>
+        
+        <p>
+            <div class="button">
+                <a href="##ApproveLink##">Akkoord</a>
+            </div>
+            
+            <div class="button">
+                <a href="##DenyLink##">Afgewezen</a>
+            </div>
+        </p>
+        
+    </body>
+</html>
