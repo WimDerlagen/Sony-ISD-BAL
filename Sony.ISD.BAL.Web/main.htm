@@ -1,0 +1,523 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Untitled Page</title>
+    
+    <style type="text/css">
+        body {padding: 0px;
+        margin: 0px;}
+        
+        #header{
+            background: #2B559C;
+            background-image: url(images/sonyHeaderBg.gif);
+            background-repeat: no-repeat;
+            height: 70px;
+            clear:both;
+        }
+        
+        #nav{
+            width: 169px;
+            border-right: 1px solid #333333;
+            background: #E2E1B0;
+            background-image: url(images/sonyNavBg.gif);
+            background-repeat: no-repeat;
+            float:left;
+            height: 600px;
+            padding: 10px;
+            
+        }
+        
+        #nav #menu
+        {
+            border: 1px solid #EBEBEB;
+            background: #DADADA;
+            margin-top: 30px;
+        }
+        
+        #nav #menu li{
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+            margin-left: -20px;
+            border: 1px solid #DADADA;
+            
+            
+            
+        }
+        
+        #nav #menu li a{
+            display: block;
+            padding: 0px;
+            margin: 0px;
+            
+            text-decoration:none;
+            padding: 2px;
+            padding-left: 6px;
+        }
+        
+        #nav #menu li a:link{}
+        #nav #menu li a:hover{
+            background: #2B559C;
+            color: white;
+        }
+        #nav #menu li a:visited{}
+        
+        
+        #content{
+            margin: 0px;
+            padding: 10px;
+            padding-left:20px;
+            padding-top: 30px;
+            background: #EBEBEB;
+            width:auto;
+            height: 600px;
+            
+        }
+        
+        #content table.productGroups{
+            width: 400px;
+            border: 1px solid #2B559C;
+        }
+        
+        #content table.productGroups th{
+            border-bottom: 1px solid #2B559C;
+            border-right: 1px solid #2B559C;
+            
+        }
+        #content table.productGroups td.group{}
+        #content table.productGroups td.owner{}
+        #content table.productGroups td.alt{
+            background: #E2E1B0;
+        }
+       
+        #content table.products{
+            width: 750px;
+            border: 1px solid #2B559C;
+        }
+        #content table.products th{
+            border-bottom: 1px solid #2B559C;
+            border-right: 1px solid #2B559C;
+        }
+        #content table.products td.productIdent{
+            width:80px;
+        }
+        #content table.products td.productName{
+            width:120px;
+        }
+        #content table.products td.serial{
+            width:100px;
+        }
+        #content table.products td.status{
+            width:50px;
+        }
+        #content table.products td.sample{
+            width:40px;
+        }
+        #content table.products td.value{
+            width:70px;
+        }
+        #content table.products td.group{
+            width:100px;
+        }
+        #content table.products td.location{
+            width:100px;
+        }
+        #content table.products td.amount{
+            width:40px;
+        }
+        #content table.products td.alt{
+             background: #E2E1B0;
+        }
+        
+        #content table.loans{
+            width: 750px;
+            border: 1px solid #2B559C;
+        }
+        
+        #content table.loans th{
+            border-bottom: 1px solid #2B559C;
+            border-right: 1px solid #2B559C;
+        }
+        
+        #content table.loans td.company{
+            width: 100px;
+        }
+        #content table.loans td.address{
+            width: 100px;
+        
+        }
+        #content table.loans td.city{
+            width: 100px;
+        
+        }
+        #content table.loans td.status{
+            width: 100px;
+        
+        }
+        #content table.loans td.startdate{
+            width: 100px;
+        
+        }
+        #content table.loans td.enddate{
+            width: 100px;
+        
+        }
+        #content table.loans td.approved{
+            width: 40px;
+        
+        }
+        #content table.loans td.issued{
+            width: 100px;
+        
+        }
+        #content table.loans td.alt{
+         background: #E2E1B0;
+        }
+        
+        #content table.productDetail{
+            width: 450px;
+            border: 1px solid #2B559C;
+            padding: 4px;
+            
+        }
+        
+        #content table.productDetail td{
+            padding: 4px;
+        }
+        #content table.productDetail td.detailCol1{
+            width: 250px;
+        }
+        #content table.productDetail td.detailCol2{
+            width: 200px;
+            background: #E2E1B0;
+        }
+        
+        #content table.cart{
+            border: 1px solid #2B559C;
+            width: 600px
+        }
+        #content table.cart th{
+            border-bottom: 1px solid #2B559C;
+            border-right: 1px solid #2B559C;
+        }
+        #content table.cart td.check{
+            width: 40px;
+        }
+        #content table.cart td.product{
+            width: 180px;
+        }
+        #content table.cart td.quantity{
+            width: 80px;
+        }
+        #content table.cart td.remove{
+            width: 80px;
+        }
+        #content table.cart td.alt{
+            background: #E2E1B0;
+        }
+                
+        
+        
+    </style>
+</head>
+<body>
+
+    <div id="header">
+    
+    </div>
+    <div id="nav">
+        <div id="menu">
+            <ul>
+                <li><a href="#">Product groups</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Loans</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Users</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="content">
+        <table class="productGroups" cellspacing="0">
+            <tr>
+                <th class="group">Productgroup</th>
+                <th class="owner">Owner</th>
+            </tr>
+            <tr>
+                <td class="group">Sony</td>
+                <td class="owner">Robert</td>
+            </tr>
+            <tr>
+                <td class="group alt">Sony</td>
+                <td class="owner alt">Robert</td>
+            </tr>
+            <tr>
+                <td class="group">Sony</td>
+                <td class="owner">Robert</td>
+            </tr>
+        </table>
+        
+        <br /><br />
+        
+        <table class="products" cellspacing="0">
+            <tr>
+                <th>Product ident</th>
+                <th>Name</th>
+                <th>Serial number</th>
+                <th>Status</th>
+                <th>Sample</th>
+                <th>Value</th>
+                <th>Product group</th>
+                <th>Location</th>
+                <th>Quantity</th>
+            </tr>
+            <tr>
+                <td class="productIdent">001</td>
+                <td class="productName">Table</td>
+                <td class="serial">123456</td>
+                <td class="status">Reserved</td>
+                <td class="sample"><input type="checkbox" checked="checked" /></td>
+                <td class="value">9,00</td>
+                <td class="group">Sony</td>
+                <td class="location">Zolder</td>
+                <td class="amount">101</td>
+            </tr>
+            <tr>
+                <td class="productIdent alt">001</td>
+                <td class="productName alt">Table</td>
+                <td class="serial alt">123456</td>
+                <td class="status alt">Reserved</td>
+                <td class="sample alt"><input type="checkbox" checked="checked" /></td>
+                <td class="value alt">9,00</td>
+                <td class="group alt">Sony</td>
+                <td class="location alt">Zolder</td>
+                <td class="amount alt">101</td>
+            </tr>
+            <tr>
+                <td class="productIdent">001</td>
+                <td class="productName">Table</td>
+                <td class="serial">123456</td>
+                <td class="status">Reserved</td>
+                <td class="sample"><input type="checkbox" checked="checked" /></td>
+                <td class="value">9,00</td>
+                <td class="group">Sony</td>
+                <td class="location">Zolder</td>
+                <td class="amount">101</td>
+            </tr>
+            <tr>
+                <td class="productIdent alt">001</td>
+                <td class="productName alt">Table</td>
+                <td class="serial alt">123456</td>
+                <td class="status alt">Reserved</td>
+                <td class="sample alt"><input type="checkbox" checked="checked" /></td>
+                <td class="value alt">9,00</td>
+                <td class="group alt">Sony</td>
+                <td class="location alt">Zolder</td>
+                <td class="amount alt">101</td>
+            </tr>
+            <tr>
+                <td class="productIdent">001</td>
+                <td class="productName">Table</td>
+                <td class="serial">123456</td>
+                <td class="status">Reserved</td>
+                <td class="sample"><input type="checkbox" checked="checked" /></td>
+                <td class="value">9,00</td>
+                <td class="group">Sony</td>
+                <td class="location">Zolder</td>
+                <td class="amount">101</td>
+            </tr>
+            <tr>
+                <td class="productIdent alt">001</td>
+                <td class="productName alt">Table</td>
+                <td class="serial alt">123456</td>
+                <td class="status alt">Reserved</td>
+                <td class="sample alt"><input type="checkbox" checked="checked" /></td>
+                <td class="value alt">9,00</td>
+                <td class="group alt">Sony</td>
+                <td class="location alt">Zolder</td>
+                <td class="amount alt">101</td>
+            </tr>
+            
+        </table>
+        
+        <br />
+        <br />
+        <br />
+        
+        <table class="loans" cellspacing="0">
+            <tr>
+                <th>Company</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>Status</th>
+                <th>Start date</th>
+                <th>End date</th>
+                <th>Approved</th>
+                <th>Issued by</th>
+            </tr>
+            <tr>
+                <td class="company">Makro</td>
+                <td class="address">Lijnstraat 11</td>
+                <td class="city">Amsterdam</td>
+                <td class="status">Option</td>
+                <td class="startdate">21-01-2007</td>
+                <td class="enddate">26-07-2007</td>
+                <td class="approved"><input type="checkbox" checked="checked" /></td>
+                <td class="issued">Muller, Ed</td>
+            </tr>
+            <tr>
+                <td class="company alt">Makro</td>
+                <td class="address alt">Lijnstraat 11</td>
+                <td class="city alt">Amsterdam</td>
+                <td class="status alt">Option</td>
+                <td class="startdate alt">21-01-2007</td>
+                <td class="enddate alt">26-07-2007</td>
+                <td class="approved alt"><input type="checkbox" checked="checked" /></td>
+                <td class="issued alt">Muller, Ed</td>
+            </tr>
+            <tr>
+                <td class="company">Makro</td>
+                <td class="address">Lijnstraat 11</td>
+                <td class="city">Amsterdam</td>
+                <td class="status">Option</td>
+                <td class="startdate">21-01-2007</td>
+                <td class="enddate">26-07-2007</td>
+                <td class="approved"><input type="checkbox" checked="checked" /></td>
+                <td class="issued">Muller, Ed</td>
+            </tr>
+            <tr>
+                <td class="company alt">Makro</td>
+                <td class="address alt">Lijnstraat 11</td>
+                <td class="city alt">Amsterdam</td>
+                <td class="status alt">Option</td>
+                <td class="startdate alt">21-01-2007</td>
+                <td class="enddate alt">26-07-2007</td>
+                <td class="approved alt"><input type="checkbox" checked="checked" /></td>
+                <td class="issued alt">Muller, Ed</td>
+            </tr>
+            <tr>
+                <td class="company">Makro</td>
+                <td class="address">Lijnstraat 11</td>
+                <td class="city">Amsterdam</td>
+                <td class="status">Option</td>
+                <td class="startdate">21-01-2007</td>
+                <td class="enddate">26-07-2007</td>
+                <td class="approved"><input type="checkbox" checked="checked" /></td>
+                <td class="issued">Muller, Ed</td>
+            </tr>
+            <tr>
+                <td class="company alt">Makro</td>
+                <td class="address alt">Lijnstraat 11</td>
+                <td class="city alt">Amsterdam</td>
+                <td class="status alt">Option</td>
+                <td class="startdate alt">21-01-2007</td>
+                <td class="enddate alt">26-07-2007</td>
+                <td class="approved alt"><input type="checkbox" checked="checked" /></td>
+                <td class="issued alt">Muller, Ed</td>
+            </tr>
+        </table>
+        
+        <br />
+        <br />
+        <br />
+        
+        <table cellspacing="0" class="productDetail">
+            <tr>
+                <td class="detailCol1">Product identification</td>
+                <td class="detailCol2">123</td>
+            </tr>
+            <tr>
+                <td class="detailCol1">Name</td>
+                <td class="detailCol2">Chair</td>
+            </tr>
+            <tr>
+                <td class="detailCol1">Serial number</td>
+                <td class="detailCol2">123</td>
+            </tr>
+            <tr>
+                <td class="detailCol1">Product group</td>
+                <td class="detailCol2">Sony</td>
+            </tr>
+            <tr>
+                <td class="detailCol1">Date first entry</td>
+                <td class="detailCol2">11-12-2005</td>
+            </tr>
+            <tr>
+                <td class="detailCol1">Product status</td>
+                <td class="detailCol2">Reserved</td>
+            </tr>
+            <tr>
+                <td class="detailCol1">External state</td>
+                <td class="detailCol2">Slightly damaged</td>
+            </tr>
+            <tr>
+                <td class="detailCol1">Sample</td>
+                <td class="detailCol2"><input type="checkbox" /></td>
+            </tr>
+            <tr>
+                <td class="detailCol1">Value</td>
+                <td class="detailCol2">&euro; 12.458</td>
+            </tr>
+            <tr>
+                <td class="detailCol1">Warehouse location</td>
+                <td class="detailCol2">Zolder</td>
+            </tr>
+            <tr>
+                <td class="detailCol1"></td>
+                <td class="detailCol2"><input type="Button" value="Add to cart" /></td>
+            </tr>
+        </table>
+        
+        <br />
+        <br />
+        <br />
+        
+        <table class="cart" cellspacing="0">
+            <tr>
+                <th><input type="checkbox" /></th>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Remove</th>
+            </tr>
+            <tr>
+                <td class="check"><input type="checkbox" /></td>
+                <td class="product">Chair</td>
+                <td class="quantity">3</td>
+                <td class="remove"><a href="#">[remove]</a></td>
+            </tr>
+            <tr>
+                <td class="check alt"><input type="checkbox" /></td>
+                <td class="product alt">Chair</td>
+                <td class="quantity alt">3</td>
+                <td class="remove alt"><a href="#">[remove]</a></td>
+            </tr>
+            <tr>
+                <td class="check"><input type="checkbox" /></td>
+                <td class="product">Chair</td>
+                <td class="quantity">3</td>
+                <td class="remove"><a href="#">[remove]</a></td>
+            </tr>
+            <tr>
+                <td class="check alt"><input type="checkbox" /></td>
+                <td class="product alt">Chair</td>
+                <td class="quantity alt">3</td>
+                <td class="remove alt"><a href="#">[remove]</a></td>
+            </tr>
+            <tr>
+                <td class="check"><input type="checkbox" /></td>
+                <td class="product">Chair</td>
+                <td class="quantity">3</td>
+                <td class="remove"><a href="#">[remove]</a></td>
+            </tr>
+            <tr>
+                <td class="check alt"><input type="checkbox" /></td>
+                <td class="product alt">Chair</td>
+                <td class="quantity alt">3</td>
+                <td class="remove alt"><a href="#">[remove]</a></td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>

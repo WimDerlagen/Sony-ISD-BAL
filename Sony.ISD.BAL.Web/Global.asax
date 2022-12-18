@@ -6,10 +6,18 @@
     {
         //if (!Roles.RoleExists("Everyone"))
         //    Roles.CreateRole("Everyone");
-
+        
         //if (!Roles.RoleExists("Administrators"))
         //    Roles.CreateRole("Administrators");
+        
+        
+        ////add logic to retreive images
+        //System.Collections.ArrayList al = Sony.ISD.WebToolkit.Authentication.Global.GetResourceImages();
 
+        //foreach (System.Drawing.Bitmap bm in al)
+        //{
+        //    bm.Save(Server.MapPath(Sony.ISD.WebToolkit.Components.Globals.PathCombine(Sony.ISD.WebToolkit.Components.Globals.ImagePath, (string)bm.Tag)));
+        //}
     }
     
     void Application_End(object sender, EventArgs e) 
