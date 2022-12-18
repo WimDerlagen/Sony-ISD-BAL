@@ -1,0 +1,116 @@
+﻿body {
+}
+
+/* manage users */
+
+table.userTable
+{
+	width: 600px;	
+}
+
+table.userTable td.usertd1
+{
+	width:200px;
+}
+
+table.userTable td.usertd2
+{
+	width:200px;
+}
+
+table.userTable td.usertd3
+{
+	width:200px;
+}
+
+table.userTable tr th a
+{
+	font-weight: bold;
+	color: black;
+	text-decoration:none;
+	margin-right: 10px;
+}
+
+table.userTable tr th input
+{
+	width: 7px;
+	height:6px;
+}
+
+/* manage roles for user */
+
+div.userRoles 
+{
+	border: 1px solid black;
+	padding: 10px;	
+	height: 320px;
+}
+
+div.userRoles h3 {}
+
+div.userRoles div.availableRoles
+{
+	padding: 10px;
+	clear:none;
+	float:left;
+	height: 290px;
+}
+
+div.userRoles div.availableRoles select
+{
+	width: 200px;
+	height: 280px;	
+}
+
+div.userRoles div.rolesButtons
+{
+	clear: none;
+	float:left;
+	width: 120px;	
+	height:  140px;
+	vertical-align:middle;
+	padding: 10px;
+	padding-top:110px;
+}
+
+div.userRoles div.rolesButtons input
+{
+	width: 100px;	
+}
+
+div.userRoles div.rolesForUser
+{
+	padding: 10px;
+	float:left;	
+	height:290px;
+	width: 200px;
+}
+
+div.userRoles div.rolesForUser select
+{
+	width: 200px;
+	height: 280px;	
+}
+
+
+/* manage roles */
+
+table.rolesTable
+{
+	width: 500px;	
+}
+
+table.rolesTable tr td.roletd1
+{
+	width: 250px;
+}
+
+table.rolesTable tr td.roletd2
+{
+	width: 200px;
+}
+
+table.rolesTable tr td.alt
+{
+	background-color: Silver;	
+}

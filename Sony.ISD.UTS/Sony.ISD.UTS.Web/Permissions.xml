@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<permissions>
+  <types>
+    <type name="Sony.ISD.UTS.Controls.TestControl">
+      <default>
+        <permission function="View" roles="Everyone"></permission>
+        <permission function="Modify" roles="Administrators"></permission>
+      </default>
+      <instances>
+        <instance name="Test1">
+          <permission function="View" roles="Managers"></permission>
+        </instance>
+      </instances>
+      </type>
+   </types>
+</permissions>

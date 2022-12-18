@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="~/" title="Home"  description="Home">
+      <siteMapNode url="~/Users" title="Users"  description="Users" >
+        <siteMapNode url="~/Users/Users" title="Users" description="Users"></siteMapNode>
+        <siteMapNode url="~/Users/Roles" title="Roles" description="Roles"></siteMapNode>
+      </siteMapNode>
+    </siteMapNode>
+</siteMap>

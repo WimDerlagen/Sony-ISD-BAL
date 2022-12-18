@@ -1,0 +1,137 @@
+<html>
+    <head>
+       
+    </head>
+    <body>
+      <div>
+        <h2>Transport aanvraag Uit Opslag</h2>
+        <p>De volgende aanvraag voor samples/loans is ingediend. Hiervoor is toestemming nodig.</p>
+      </div>
+      
+      <div>
+        <table style="width: 500px;margin-bottom: 40px;" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+                <td style="width: 100px;">Laadadres</td>
+                <td style="width:150px;">Naam bedrijf</td>
+                <td>##WarehouseName##</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Adres</td>
+                <td>##WarehouseAddress##</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Postcode/Plaats</td>
+                <td>##WarehouseZip##  ##WarehouseCity##</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Contact persoon</td>
+                <td>##WarehouseContact##</td>
+            </tr>
+        </table>
+        
+        <table style="width: 500px;margin-bottom: 40px;"  cellpadding="0" cellspacing="0" border="0">
+            <tr>
+                <td style="width: 100px;">Afleveradres</td>
+                <td style="width:150px;">Naam bedrijf</td>
+                <td>##LoanerCompany##</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Adres</td>
+                <td>##LoanerAddress##</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Postcode/Plaats</td>
+                <td>##LoanerZip##  ##LoanerCity##</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Contact persoon</td>
+                <td>##LoanerContact##</td>
+            </tr>
+        </table>
+        
+        <table style="width: 500px;margin-bottom: 40px;" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+                <td style="width:150px;">Bijzonderheden</td>
+                
+                ##Remarks##
+                ##BlockBegin--Remark##
+                <tr>
+                    <td style="width:150px;"></td>
+                    <td>##RemarkText##</td>
+                </tr>
+                ##BlockEnd--Remark##
+                
+                <td>##Remarks##</td>
+            </tr>
+        </table>
+      </div>
+      
+      <div>
+        <table style="width: 500px;margin-bottom: 40px;" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+                <td style="width: 150px;">Aanvrager</td>
+                <td>##Requestor##</td>
+            </tr>
+            <tr>
+                <td>Afdeling</td>
+                <td>##Department##</td>
+            </tr>
+            <tr>
+                <td>Sony e-mail adres</td>
+                <td>##Email##</td>
+            </tr>
+            <tr>
+                <td>Costcenter</td>
+                <td>##Costcenter##</td>
+            </tr>
+            <tr>
+                <td>Start datum</td>
+                <td>##StartDate##</td>
+            </tr>
+            <tr>
+                <td>Eind datum</td>
+                <td>##EndDate##</td>
+            </tr>
+            
+            <tr>
+                <td>Ordernummer</td>
+                <td>##OrderNumber##</td>
+            </tr>
+        </table>
+      </div>
+      
+      <div>
+        <table style="width: 500px;margin-bottom: 40px;" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+                <td style="width:150px;">Aflevering condities</td>
+                <td>##DeliveryTerms##</td>
+            </tr>
+        </table>
+      </div>
+      
+      <div>
+        <table style="width: 500px;margin-bottom: 40px;" cellpadding="0" cellspacing="0" border="0">
+            <caption>Producten</caption>
+            ##Links##
+            ##BlockBegin--Link##
+            <tr>
+                <td style="width:350px;"><a href="##Url##">##ProductName##</a></td>
+                <td>##Quantity##</td>
+            </tr>
+            ##BlockEnd--Link##
+        </table>
+      </div>
+      
+      <div>
+       <p>Deze aanvraag moet geaccordeerd worden. Klik op de onderstaande link om de aanvraag te openen alwaar de aanvraag kan worde geaccordeerd danwel afgewezen.</p>
+       <p><a href="##RequestPage##">##RequestPage##</a></p>
+      </div>
+        
+    </body>
+</html>
