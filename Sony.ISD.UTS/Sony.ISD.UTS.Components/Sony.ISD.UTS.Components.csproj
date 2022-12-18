@@ -1,0 +1,84 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BB753E0E-D943-434A-A845-CB3F3CCB2D1D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sony.ISD.UTS.Components</RootNamespace>
+    <AssemblyName>Sony.ISD.UTS.Components</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseClasses\DataServiceBase.cs" />
+    <Compile Include="Collections\LoanSet.cs" />
+    <Compile Include="Collections\ProductSet.cs" />
+    <Compile Include="Components\WMSRequest.cs" />
+    <Compile Include="Components\WMSApplication.cs" />
+    <Compile Include="Components\WMSUser.cs" />
+    <Compile Include="Enumerations\LoanStatus.cs" />
+    <Compile Include="Enumerations\ProductStatus.cs" />
+    <Compile Include="Enumerations\SortLoansBy.cs" />
+    <Compile Include="Enumerations\SortProductBy.cs" />
+    <Compile Include="EventArguments\LoanRequestApprovedEventArgs.cs" />
+    <Compile Include="EventArguments\LoanRequestedEventArgs.cs" />
+    <Compile Include="EventArguments\ProductChangeEventArgs.cs" />
+    <Compile Include="Mail\RequestMail.cs" />
+    <Compile Include="Persistables\Address.cs" />
+    <Compile Include="Persistables\Loan.cs" />
+    <Compile Include="Persistables\LoanAccessory.cs" />
+    <Compile Include="Persistables\LoanRemark.cs" />
+    <Compile Include="Persistables\Product.cs" />
+    <Compile Include="Persistables\ProductGroup.cs" />
+    <Compile Include="Persistables\UTSImport.cs" />
+    <Compile Include="Persistables\Warehouse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Provider\CommonDataProvider.cs" />
+    <Compile Include="Provider\CommonDataProviderCollection.cs" />
+    <Compile Include="Services\ImportService.cs" />
+    <Compile Include="Services\LoanService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Sony.ISD.WebToolkit\Sony.ISD.WebToolkit.Components\Sony.ISD.WebToolkit.Components.csproj">
+      <Project>{1963C7A8-34FD-4797-BEE5-E5F50A0AB7A2}</Project>
+      <Name>Sony.ISD.WebToolkit.Components</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
