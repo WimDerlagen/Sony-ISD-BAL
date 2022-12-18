@@ -1,0 +1,123 @@
+﻿
+        #pageContainer
+        {
+			width: 1000px;
+        }
+        
+        #navigation{
+            float: left;
+        }
+        
+        #content{
+            float:left;
+            border: 1px solid black;
+            margin-top: 20px;
+            width: 760px;
+        }
+        
+        #menu{
+            width: 212px;
+            margin-left:10px;
+            margin-right: 10px;
+            margin-top:20px;
+            
+        }
+        
+        #menu #menuTop{
+            background: url(/BAL/Themes/default/images/BALMenuBGTop.gif);
+            width: 212px;
+            height: 98px;
+        }
+        
+        #menu #menuButtons{
+           background: url(/BAL/Themes/default/images/BALMenuBGCentre.gif);
+            background-repeat: repeat-y;
+            width: 212px;
+        }
+        
+        #menu #menuButtons ul{
+            margin-left: 10px;
+            width:192px;
+        }
+        
+        #menu #menuButtons ul li{
+            width: 172px;
+            height: 20px;
+            display: block;
+            padding-bottom: 5px;
+        }
+        
+        #menu #menuButtons ul li a{
+            width: 172px;
+            height: 20px;
+            display: block;
+            background: #CCC;
+            padding: 4px;
+            padding-left: 10px;
+        }
+        
+        
+        #menu #menuBottom{
+            background: url(/BAL/Themes/default/images/BALMenuBGBottom.gif);
+            width: 212px;
+            height: 284px;        
+        }
+        
+        
+        
+        
+        /*  table layouts   */
+        
+        
+        
+        .contentTable
+        {
+			
+        }
+        
+        .formTable
+        {
+			
+        }
+        
+        table.projectTable
+        {
+			width: 400px;
+        }
+        
+        table.projectsTable td.fCol
+        {
+			width: 300px;
+        }
+        
+        table.projectsTable td.sCol
+        {
+			width: 100px;
+        }
+        
+        
+        table.meetingsTable
+        {
+			width: 400px;
+        }
+        
+        table.meetingsTable td.fCol
+        {
+			width: 300px;
+        }
+        
+        table.meetingsTable td.sCol
+        {
+			width: 100px;
+        }
+        
+        
+        
+        table.contentTable td input.textBox
+        {
+			
+        }
+        
+        
+        /*  end table layouts   */
+        
