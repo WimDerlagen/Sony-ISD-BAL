@@ -1,0 +1,50 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="Themes_default_masters_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+    <link rel="stylesheet" type="text/css" href="../style/undohtml.css" />
+    <link rel="stylesheet" type="text/css" href="../style/main.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="pageContainer">
+        <div id="navigation">
+            <div id="menu">
+                <div id="menuTop">
+                    
+                </div>
+                <div id="menuButtons">
+                    <asp:TreeView ID="TreeView1" CssClass="treeView" runat="server" ImageSet="Simple">
+                        <ParentNodeStyle Font-Bold="False" />
+                        <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+                        <SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" HorizontalPadding="0px"
+                            VerticalPadding="0px" />
+                        <NodeStyle Font-Names="Tahoma" Font-Size="10pt" ForeColor="Black" HorizontalPadding="4px"
+                            NodeSpacing="0px" VerticalPadding="4px" />
+                        <Nodes>
+                            <asp:TreeNode Expanded="True" NavigateUrl="#" Text="Current" Value="Current">
+                                <asp:TreeNode NavigateUrl="~/Projects" Text="Projects" Value="Projects"></asp:TreeNode>
+                                <asp:TreeNode NavigateUrl="#" Text="Meetings" Value="Meetings"></asp:TreeNode>
+                            </asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="#" Text="Archived" Value="Archived">
+                                <asp:TreeNode NavigateUrl="#" Text="Projects" Value="Projects"></asp:TreeNode>
+                                <asp:TreeNode NavigateUrl="#" Text="Meetings" Value="Meetings"></asp:TreeNode>
+                            </asp:TreeNode>
+                        </Nodes>
+                    </asp:TreeView>
+                </div>
+                <div id="menuBottom"></div>
+            </div>
+        </div>
+        
+        <div id="content">
+            <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+            </asp:contentplaceholder>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
